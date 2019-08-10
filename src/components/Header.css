@@ -1,0 +1,73 @@
+.nav-header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    background: #BFFF99;
+  }
+  .nav-logo a img{
+    max-height: 70px;
+  }
+  .main-menu nav ul{
+    text-align: right;
+  }
+  .main-menu nav ul li{
+    display: inline-block;
+    margin: 0;
+  }
+  .main-menu dl, ol, ul {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .main-menu nav ul li a{
+    display: block;
+    font-family: 'Press Start 2P', cursive;
+    color: #1C8B63;
+    font-size: 10px;
+    padding: 10px 10px;
+    position: relative;
+  }
+  
+  .main-menu nav ul li a:before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    height: 12px;
+    width: 80px;
+    border-radius: 50%;
+    opacity: 0;
+    transform: translateX(-50%);
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+  }
+  .main-menu nav ul li a:after{
+    content: attr(data-hover);
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    opacity: 0;
+    transform: translateX(-50%);
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+  }
+  .main-menu nav ul li a:hover:after{
+    opacity: 1;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .main-menu nav ul li.active a:before{
+    opacity: 1;
+  }
+  .main-menu nav ul li a span{
+    display: block;
+    -webkit-transition: all 0.15s ease-in-out 0s;
+    -o-transition: all 0.15s ease-in-out 0s;
+    transition: all 0.15s ease-in-out 0s;
+  }
+  .main-menu nav ul li a:hover span{
+    transform: translate3d(0,-12px,0);
+    opacity: 0;
+  }

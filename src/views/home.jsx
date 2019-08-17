@@ -1,8 +1,11 @@
 import React from 'react'
+import Calculator from '../containers/Calculator'
 
 const Home = props => (
     <div>
-        <h1>Soy el Home</h1>
+        <Calculator>
+
+        </Calculator>
     </div>
 )
 

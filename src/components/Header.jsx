@@ -16,7 +16,7 @@ const Header = () =>
                     <div class="main-menu">
                         <nav class="nav-menu">
                             <ul id="nav_menu">
-                                <li><NavLink data-hover="¡Coyosan espera!" to="/login"><span>Entrar</span></NavLink></li>
+                                <li><NavLink data-hover="¡Coyosan espera!" to="/login"><span>Entrar</span></NavLink></li>&emsp;
                                 <li><NavLink data-hover="¡Vamos!" to="/signup"><span>Registrarse</span></NavLink></li>
                             </ul>
                         </nav>

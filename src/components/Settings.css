@@ -1,0 +1,62 @@
+.settings-menu {
+    color: black;
+}
+
+.list-group-item {
+    border-style: none;
+}
+
+.list-group-item-action.active {
+    color: #ffffff;
+    background-color: #009688;
+    border-style: none;
+}
+
+.list-group-item-action:hover {
+    color: #ffffff;
+    background-color: #00796B;
+    border-style: none;
+}
+
+.btn {
+    color: #ffffff;
+    background-color: #009688;
+    border-style: none;
+
+}
+
+.card {
+    background-color: #fff;
+    border-style: none;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active,
+.btn.active,
+.open>.dropdown-toggle.btn {
+    color: #fff;
+    background-color: #00796B;
+    border-style: none;
+}
+
+.anchor {
+    color: #009688;
+    font-size: 14px;
+}
+
+.anchor:hover {
+    color: #00796B;
+    text-decoration: none;
+}
+
+.row-divider {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-family: 'Press Start 2P', cursive;
+    color: #009688;
+    font-size: 14px;
+}

@@ -10,7 +10,6 @@ import Settings from './views/settings';
 import Password from './views/password';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 
-
 ReactDOM.render(
     <Router>
         <Header/>

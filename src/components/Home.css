@@ -1,0 +1,128 @@
+h4 {
+    font-family: 'Press Start 2P', cursive;
+    color: black;
+    font-size: 26px;
+    line-height: 1.5;
+}
+
+h5 {
+    color: black;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+h6 {
+    font-family: 'Press Start 2P', cursive;
+    color: black;
+    font-size: 16px;
+    line-height: 2;
+}
+
+
+.btn {
+    color: #ffffff;
+    background-color: #009688;
+    border-style: none;
+
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+.card {
+    background-color: #BFFF99;
+    border-style: none;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active,
+.btn.active,
+.open>.dropdown-toggle.btn {
+    color: #fff;
+    background-color: #00796B;
+    border-style: none;
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+input[type="select"]:focus,
+.uneditable-input:focus {
+    border-color: rgba(0, 150, 136, 1);
+    box-shadow: none;
+    outline: 0 none;
+}
+
+.anchor {
+    color: #009688;
+    font-size: 13px;
+}
+
+.anchor:hover {
+    color: #00796B;
+    text-decoration: none;
+    text-underline: none;
+}
+
+.calculator-area {
+    background-color: #BFFF99;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.list-complete {
+    padding-left: 15px;
+}
+
+.list-options {
+    font-size: 18px;
+    position: relative;
+    display: block;
+    padding: 0;
+    margin-bottom: 0;
+    border: none;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 10px;
+    margin-left: 10px;
+}
+
+@media screen and (min-width: 1200px) {
+    .calculator-limit-size {
+        max-width: 375px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width:1199px) {
+    .calculator-limit-size {
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .padding-columns {
+        padding-top: 20px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .fixed-position {
+        position: fixed;
+    }
+}

@@ -2,15 +2,10 @@ import React from 'react'
 
 const Password = props => (
 
-    <div style={{ backgroundColor: "#E5E9EA" }}>
+    <div style={{ backgroundColor: "#EFFFE5" }}>
         <div class="container" style={{ paddingTop: "30px", paddingBottom: "30px" }}>
-            <div class="row" style={{ marginBottom: "15px" }}>
-                <div class="col-md-3">
-                    <div class="list-group ">
-                        <a href="#" class="list-group-item list-group-item-action active settings-menu">Acceso</a>
-                    </div>
-                </div>
-                <div class="col-md-9">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
                     <div class="card">
                         <div class="card-body">
                             <div class="row" >

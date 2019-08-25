@@ -8,7 +8,8 @@ import Signup from './views/signup';
 import Summary from './views/summary';
 import Settings from './views/settings';
 import Password from './views/password';
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import '../node_modules/font-awesome/css/font-awesome.min.css'; 
 
 ReactDOM.render(
     <Router>

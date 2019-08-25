@@ -3,16 +3,10 @@ import '../components/Settings.css'
 
 const Settings = props => (
 
-    <div style={{ backgroundColor: "#E5E9EA" }}>
+    <div style={{ backgroundColor: "#EFFFE5" }}>
         <div class="container" style={{ paddingTop: "30px", paddingBottom: "30px" }}>
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="list-group ">
-                        <a href="#" class="list-group-item list-group-item-action active settings-menu">Perfil</a>
-                        <a href="#" class="list-group-item list-group-item-action settings-menu">Cuenta</a>
-                    </div>
-                </div>
-                <div class="col-md-9">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
                     <div class="card">
                         <div class="card-body">
                             <div class="row" >

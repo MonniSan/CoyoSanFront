@@ -5,10 +5,17 @@
 
 }
 
-.card {
-    background-color: #fff;
+.card-body {
+    background-color: #BFFF99;
     border-style: none;
 }
+
+.card {
+    background-color: #EFFFE5;
+    border-style: none;
+}
+
+
 
 .btn:hover,
 .btn:focus,

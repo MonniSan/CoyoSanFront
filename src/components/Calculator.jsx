@@ -9,7 +9,7 @@ const Calculator = ({ handleChange, goal_name, goal_price, goal_months, submit, 
             <div className="form-row">
                 <div className="form group-row col">
                     <label htmlFor="inputState">¿Cuál es tu sueño?</label>
-                    <select id="inputState" className={`form-control ${errors['goal_name'] ? 'is-invalid' : ''}`} onChange={handleChange('goal_name')} value={goal_name}>
+                    <select type="select" id="inputState" className={`form-control ${errors['goal_name'] ? 'is-invalid' : ''}`} onChange={handleChange('goal_name')} value={goal_name}>
                         <option>¡Elige!</option>
                         <option value="house">Casa</option>
                         <option value="education">Educación</option>

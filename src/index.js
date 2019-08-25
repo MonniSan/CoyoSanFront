@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import Header from './components/Header';
+import Footer from './components/Footer';
 import Home from './views/home';
 import Login from './views/login';
 import Signup from './views/signup';
@@ -25,6 +26,7 @@ ReactDOM.render(
                 <h1>Error 404</h1>
             </Route>
         </Switch>
+        <Footer/>
     </Router>, 
     document.getElementById('root')
 );

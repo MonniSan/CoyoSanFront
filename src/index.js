@@ -12,6 +12,8 @@ import Summary from "./views/summary";
 import Settings from "./views/settings";
 import Password from "./views/password";
 import Startgame from "./views/startgame";
+import PrivateRoute from "./containers/PrivateRoute";
+import PrivateRedirect from "./containers/PrivateRedirect";
 
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "../node_modules/font-awesome/css/font-awesome.min.css";
@@ -30,13 +32,13 @@ ReactDOM.render(
     <Router>
       <Header />
       <Switch>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/login" component={Login} />
-        <Route exact path="/signup" component={Signup} />
-        <Route exact path="/summary" component={Summary} />
-        <Route exact path="/settings" component={Settings} />
+        <PrivateRedirect exact path="/" component={Home} />
+        <PrivateRedirect exact path="/login" component={Login} />
+        <PrivateRedirect exact path="/signup" component={Signup} />
+        <PrivateRoute exact path="/summary" component={Summary} />
+        <PrivateRoute exact path="/settings" component={Settings} />
         <Route exact path="/password" component={Password} />
-        <Route exact path="/startgame" component={Startgame} />
+        <PrivateRoute exact path="/startgame" component={Startgame} />
         <Route>
           <h1>Error 404</h1>
         </Route>

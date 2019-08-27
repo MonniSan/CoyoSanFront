@@ -41,8 +41,7 @@ const reducer = (state = initialState, action) => {
       return {
         ...state,
         isLoading: false,
-        hasError: false,
-        item: action.payload
+        hasError: false
       };
     case actionTypes.SAVING_SAVE_FAILURE:
       return { ...state, isLoading: false, hasError: true };

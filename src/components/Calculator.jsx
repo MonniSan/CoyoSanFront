@@ -27,7 +27,7 @@ const Calculator = ({
       {message && (
         <div>
           <h5>{message}</h5>
-          <Link class="btn btn-outline-success btn-block" to="/signup">
+          <Link className="btn btn-outline-success btn-block" to="/signup">
             Registrarse
           </Link>
         </div>
@@ -63,7 +63,7 @@ const Calculator = ({
                       onBlur={handleBlur}
                       name="goal_name"
                       value={values.goal_name}
-                      class="form-control"
+                      className="form-control"
                     >
                       <option>¡Elige!</option>
                       <option value="Casa">Casa</option>
@@ -84,7 +84,8 @@ const Calculator = ({
                   <div className="form group-row col">
                     <label>¿Cuánto cuesta?</label>
                     <input
-                      class="form-control"
+                      autocomplete="off"
+                      className="form-control"
                       type="number"
                       placeholder="Costo"
                       onChange={handleChange}
@@ -104,7 +105,8 @@ const Calculator = ({
                   <div className="form group-row col">
                     <label>¿En cuantos meses quieres lograrlo?</label>
                     <input
-                      class="form-control"
+                      autocomplete="off"
+                      className="form-control"
                       type="number"
                       placeholder="Meses"
                       onChange={handleChange}

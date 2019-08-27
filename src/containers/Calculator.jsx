@@ -1,13 +1,23 @@
 import React from "react";
+import { connect } from "react-redux";
+import { actionTypes } from "../core/calculator/calculator.reducer";
 import Calculator from "../components/Calculator";
 import Loading from "../components/Loading";
 import * as Yup from "yup";
+
+const mapStateToProps = state => ({});
+const mapDispatchToProps = dispatch => ({
+  setCalculator: values =>
+    dispatch({
+      type: actionTypes.SET_CALCULATOR,
+      payload: values
+    })
+});
 
 class CalculatorContainer extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      isLoading: false,
       message: ""
     };
 
@@ -22,12 +32,13 @@ class CalculatorContainer extends React.Component {
   }
 
   submit(values) {
-    const { goal_price, goal_months } = values;
+    const { goal_price, goal_months, goal_name } = values;
     // Caso todo chido, voy al servidor
     const precision = Math.pow(10, 2);
     const regularAmountToBe = goal_price / goal_months;
     const regularAmountToBeRounded =
       Math.ceil(regularAmountToBe * precision) / precision;
+    this.props.setCalculator({ goal_price, goal_months, goal_name });
     this.setState({
       message: `Necesitas ahorrar durante ${goal_months} meses la cantidad de $${regularAmountToBeRounded}`
     });
@@ -64,4 +75,7 @@ class CalculatorContainer extends React.Component {
   }
 }
 
-export default CalculatorContainer;
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(CalculatorContainer);

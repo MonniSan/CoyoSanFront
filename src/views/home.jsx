@@ -9,16 +9,16 @@ const Home = props => (
       className="container"
       style={{ paddingTop: "30px", paddingBottom: "30px" }}
     >
-      <div class="row">
+      <div className="row">
         <div
-          class="calculator-area calculator-limit-size rounded col-lg-4 col-md-3 col-sm-12 fixed-position pr-4"
+          className="calculator-area calculator-limit-size rounded col-lg-4 col-md-3 col-sm-12 fixed-position pr-4"
           style={{ border: "1px #fff" }}
         >
           <div class>
             <Calculator></Calculator>
           </div>
         </div>
-        <div class="col-lg-8 offset-lg-4 offset-md-5 col-md-7 col-sm-12 pl-4 padding-columns">
+        <div className="col-lg-8 offset-lg-4 offset-md-5 col-md-7 col-sm-12 pl-4 padding-columns">
           <h4>¡Ahorra para lograr tus sueños con CoyoSan!</h4>
           <h5>
             Ahorra es una cuestión de hábito muy importante para sortear
@@ -26,13 +26,13 @@ const Home = props => (
             endeudarnos, ya que nos permite:
           </h5>
           <ul>
-            <li class="list-option">
+            <li className="list-option">
               Disfrutar de un futuro financiero estable
             </li>
-            <li class="list-option">Lograr nuestros planes y metas</li>
-            <li class="list-option">Hacer frente a gastos extraordinarios</li>
-            <li class="list-option">Fomentar el hábito de la disciplina</li>
-            <li class="list-option">
+            <li className="list-option">Lograr nuestros planes y metas</li>
+            <li className="list-option">Hacer frente a gastos extraordinarios</li>
+            <li className="list-option">Fomentar el hábito de la disciplina</li>
+            <li className="list-option">
               Realizar inversiones inteligentes para nuestro patrimonio
             </li>
           </ul>
@@ -42,11 +42,11 @@ const Home = props => (
             className="img-fluid float-center p-3"
             alt="CoyoSan"
           />
-          <h6 class="text-right">
+          <h6 className="text-right">
             ¡No esperes más y toma el primer paso con ayuda de CoyoSan y sus
             amigos!
           </h6>
-          <h5 class="text-right">
+          <h5 className="text-right">
             Hay muchas posibilidades para las que deberías ahorrar, incluyendo:
             vacaciones, viajes, educación, jubilación, deudas e incluso
             emergencias.

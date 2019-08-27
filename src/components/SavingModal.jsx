@@ -1,21 +1,21 @@
 import React from "react";
 import "./Modal.css";
 
-<div class="modal" tabindex="-1" role="dialog">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Nuevo abono</h5>
+<div className="modal" tabindex="-1" role="dialog">
+  <div className="modal-dialog" role="document">
+    <div className="modal-content">
+      <div className="modal-header">
+        <h5 className="modal-title">Nuevo abono</h5>
         <button
           type="button"
-          class="close"
+          className="close"
           data-dismiss="modal"
           aria-label="Close"
         >
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="modal-body">
+      <div className="modal-body">
         <p>
           <div>
             <h2> Abonar al plan </h2>
@@ -27,6 +27,7 @@ import "./Modal.css";
           <div>
             <label htmlFor="inputState">Abonar la cantidad de:</label>
             <input
+              autocomplete="off"
               type="number"
               className={`form-control ${
                 errors["saving_amount"] ? "is-invalid" : ""
@@ -37,11 +38,15 @@ import "./Modal.css";
           </div>
         </p>
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">
+      <div className="modal-footer">
+        <button
+          type="button"
+          className="btn btn-secondary"
+          data-dismiss="modal"
+        >
           Aceptar
         </button>
-        <button type="button" class="btn btn-primary">
+        <button type="button" className="btn btn-primary">
           Cancelar
         </button>
       </div>

@@ -217,28 +217,6 @@ class Signup extends React.Component {
                                 )}
                               </div>
                             </div>
-                            <br />
-
-                            <div className="form-row">
-                              <div className="form group-row col">
-                                <label>Elige una contraseña</label>
-                                <input
-                                  autocomplete="off"
-                                  className="form-control"
-                                  type="password"
-                                  onChange={handleChange}
-                                  onBlur={handleBlur}
-                                  name="password"
-                                  value={values.password}
-                                />
-                                {errors.password && touched.password && (
-                                  <div>
-                                    <strong>{errors.password}</strong> <br />
-                                    <br />
-                                  </div>
-                                )}
-                              </div>
-                            </div>
                           </div>
                           <div className="col-6">
                             <div className="form-row">
@@ -262,6 +240,33 @@ class Signup extends React.Component {
                               </div>
                             </div>
                             <br />
+                          </div>
+                        </div>
+                        <div className="row">
+                          <div className="col-6">
+                            <div className="form-row">
+                              <div className="form group-row col">
+                                <label>Elige una contraseña</label>
+                                <input
+                                  autocomplete="off"
+                                  className="form-control"
+                                  type="password"
+                                  onChange={handleChange}
+                                  onBlur={handleBlur}
+                                  name="password"
+                                  value={values.password}
+                                />
+                                {errors.password && touched.password && (
+                                  <div>
+                                    <strong>{errors.password}</strong> <br />
+                                    <br />
+                                  </div>
+                                )}
+                              </div>
+                            </div>
+                            <br />
+                          </div>
+                          <div className="col-6">
                             <div className="form-row">
                               <div className="form group-row col">
                                 <label>Confirma tu contraseña</label>
@@ -282,6 +287,7 @@ class Signup extends React.Component {
                                 )}
                               </div>
                             </div>
+                            <br />
                           </div>
                         </div>
                       </div>

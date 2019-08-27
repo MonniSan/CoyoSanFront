@@ -1,12 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { createStore, compose } from "redux";
+import { createStore, compose, applyMiddleware } from "redux";
 import { Provider } from "react-redux";
+import createSagaMiddleware from "redux-saga";
 import "./index.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./views/home";
-import Login from "./views/login";
+import Login from "./containers/login";
 import Signup from "./containers/Signup";
 import Summary from "./views/summary";
 import Settings from "./views/settings";
@@ -18,14 +19,21 @@ import PrivateRedirect from "./containers/PrivateRedirect";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "../node_modules/font-awesome/css/font-awesome.min.css";
 import rootReducer from "./core/rootReducer";
+import rootSaga from "./core/rootSaga";
 
+const sagaMiddleware = createSagaMiddleware();
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 let store;
 if (process.env.NODE_ENV === "production") {
-  store = createStore(rootReducer, compose());
+  store = createStore(rootReducer, compose(applyMiddleware(sagaMiddleware)));
 } else {
-  store = createStore(rootReducer, composeEnhancers());
+  store = createStore(
+    rootReducer,
+    composeEnhancers(applyMiddleware(sagaMiddleware))
+  );
 }
+
+sagaMiddleware.run(rootSaga);
 
 ReactDOM.render(
   <Provider store={store}>

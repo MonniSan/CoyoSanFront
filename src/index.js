@@ -7,12 +7,12 @@ import "./index.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./views/home";
-import Login from "./containers/login";
+import Login from "./containers/Login";
 import Signup from "./containers/Signup";
 import Summary from "./views/summary";
 import Settings from "./views/settings";
 import Password from "./views/password";
-import Startgame from "./views/startgame";
+import Startgame from "./containers/Stargame";
 import PrivateRoute from "./containers/PrivateRoute";
 import PrivateRedirect from "./containers/PrivateRedirect";
 

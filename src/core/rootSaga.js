@@ -1,6 +1,7 @@
 import { call, put, takeEvery, takeLatest } from "redux-saga/effects";
 import axios from "axios";
 import { actionTypes as authActions } from "./auth/auth.reducer";
+import { actionTypes as goalActions } from "./goal/goal.reducer";
 
 function* signup(action) {
   try {
@@ -33,9 +34,23 @@ function* signin(action) {
   }
 }
 
+function* getGoal(action) {
+  try {
+    console.log(action);
+    const result = yield call(axios.get, "https://coyosan.herokuapp.com/goal", {
+      headers: { Authorization: action.payload }
+    });
+
+    yield put({ type: goalActions.GOAL_SUCCESS, payload: result.data });
+  } catch (error) {
+    yield put({ type: goalActions.GOAL_FAILURE, error });
+  }
+}
+
 function* rootSaga() {
   yield takeLatest(authActions.SIGNUP_REQUEST, signup);
   yield takeLatest(authActions.SIGNIN_REQUEST, signin);
+  yield takeLatest(goalActions.GOAL_REQUEST, getGoal);
 }
 
 export default rootSaga;

@@ -1,9 +1,19 @@
-import React from 'react'
+import React from "react";
 
-const Summary = props => (
-    <div>
+class Summary extends React.Component {
+  constructor() {
+    super();
+  }
+  componentDidMount() {
+    this.props.getGoal(this.props.token);
+  }
+  render() {
+    return (
+      <div>
         <h1>Listado de tus metas</h1>
-    </div>
-)
+      </div>
+    );
+  }
+}
 
-export default Summary
+export default Summary;

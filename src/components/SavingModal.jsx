@@ -1,5 +1,6 @@
 import React from "react";
 import "./Modal.css";
+import { NavLink } from "react-router-dom";
 import { Formik } from "formik";
 import DOG from "../assets/images/preview/DOG.png";
 import TIGGER from "../assets/images/preview/TIGGER.png";
@@ -69,13 +70,15 @@ const SavingModal = props => (
                 </div>
               </div>
               <div className="modal-footer">
-                <button
-                  type="submit"
-                  className="btn btn-secondary"
-                  data-dismiss="modal"
-                >
-                  Aceptar
-                </button>
+                <NavLink to="/summary">
+                  <button
+                    type="submit"
+                    className="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Aceptar
+                  </button>
+                </NavLink>
                 <button
                   type="button"
                   className="btn btn-primary"

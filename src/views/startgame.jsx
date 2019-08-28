@@ -1,11 +1,11 @@
 import React from "react";
 import SavingModal from "../components/SavingModal";
 import "./startgame.css";
-import PROUD from "../assets/images/gifs/dog_proud.gif";
-import HAPPY from "../assets/images/gifs/coyo_happy.gif";
-import FINE from "../assets/images/gifs/dog_fine.gif";
-import SICK from "../assets/images/gifs/dog_sick.gif";
-import RIP from "../assets/images/gifs/dog_rip.gif";
+// import PROUD from "../assets/images/gifs/dog_proud.gif";
+// import HAPPY from "../assets/images/gifs/coyo_happy.gif";
+// import FINE from "../assets/images/gifs/dog_fine.gif";
+// import SICK from "../assets/images/gifs/dog_sick.gif";
+// import RIP from "../assets/images/gifs/dog_rip.gif";
 
 class Startgame extends React.Component {
   constructor() {
@@ -64,7 +64,7 @@ class Startgame extends React.Component {
                   Deposito realizado{" "}
                 </button>
               </p>
-              <hr />
+              {/* <hr />
               {this.props.goal &&
                 this.props.goal.Sensei &&
                 this.props.goal.Sensei.Sensei_health &&
@@ -101,7 +101,7 @@ class Startgame extends React.Component {
                       />
                     )}
                   </div>
-                )}
+                )} */}
             </div>
           </>
         )}

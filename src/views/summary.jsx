@@ -4,9 +4,7 @@ class Summary extends React.Component {
   constructor() {
     super();
   }
-  componentDidMount() {
-    this.props.getGoal(this.props.token);
-  }
+  componentDidMount() {}
   render() {
     return (
       <div>
